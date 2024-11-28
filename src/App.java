@@ -10,7 +10,7 @@ public class App {
         // lfsr2.getNext();
         // }
 
-        int[] cd5 = { 1, 3, 2, 4, 1 };
+        int[] cd5 = { 4, 3, 0, 3, 1 };
         int[] case51 = { 1, 0, 0, 0 };
         LFSR lfsr5 = new LFSR(4, cd5, 5, case51);
 
