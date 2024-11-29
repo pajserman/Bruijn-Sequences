@@ -19,6 +19,8 @@ public class LFSR {
     int getNext() {
         // check special cases
         if (areArraysEqual(buffer, case1)) {
+            // System.out.print("oops here!");
+            // System.exit(0);
             buffer[0] = 0;
             return case1[0];
         }
@@ -30,10 +32,10 @@ public class LFSR {
         int sum = 0;
         for (int i = 0; i < buffer.length; i++) {
             if (CD[i] != 0) {
-                sum += CD[i] * buffer[i];
+                sum += -1 * CD[i] * buffer[i];
             }
         }
-        int newValue = sum % modulus;
+        int newValue = (sum + 100) % modulus;
         int oldValue = buffer[0];
         // shift left return leftmost
         for (int i = 0; i < buffer.length - 1; i++) {
