@@ -4,7 +4,7 @@ public class App {
         int[] case21 = { 1, 0, 0, 0 };
         LFSR lfsr2 = new LFSR(4, cd2, 2, case21);
 
-        // for (int i = 0; i < 22; i++) {
+        // for (int i = 0; i < 16; i++) {
         // System.out.print(i + ": ");
         // lfsr2.print();
         // lfsr2.getNext();
@@ -20,9 +20,9 @@ public class App {
         // lfsr5.getNext();
         // }
 
-        for (int i = 0; i < 10003; i++) {
-            NumberStorage.store(mapFunction(lfsr2.getNext(), lfsr5.getNext()));
-        }
+        // for (int i = 0; i < 10003; i++) {
+        // NumberStorage.store(mapFunction(lfsr2.getNext(), lfsr5.getNext()));
+        // }
 
     }
 
